@@ -26,7 +26,7 @@
 
 
 function calculateCartPrice(...num){ // here ... is called as rest operator -> used to pass multiple parameters to a function
-    console.log(num);
+    // console.log(num);
 }
 calculateCartPrice(10,50,60); 
 
@@ -35,9 +35,36 @@ const myobj={
     price:99
 }
 function objectHandler(anyObject){
-    console.log(`hello this is ${anyObject.username} and its price is ${anyObject.price}`);
+    // console.log(`hello this is ${anyObject.username} and its price is ${anyObject.price}`);
 }
 
-objectHandler(myobj);
+// objectHandler(myobj);
 
 // similarly array can also be passed as arguments
+
+
+
+// function one(){
+
+//     const parent="one";
+
+//     function two(){
+//         const child="two";
+//         console.log(parent);
+//         console.log(child);
+//     }
+//     two();
+// }
+// one();
+
+// // hoisting
+
+// one(5);
+// function one(num){
+//     return console.log(num+1);
+// }
+
+// const two=function(num){
+//     return console.log(num+2);
+// }
+// two(5);
