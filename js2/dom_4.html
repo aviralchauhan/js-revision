@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color: white;">
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(lang){
+        const li=document.createElement("li");
+        li.innerHTML = `${lang}`;
+        document.querySelector('.lang').appendChild(li);
+        console.log(lang)
+    }
+    addLang("python");
+    addLang("java");
+    addLang("c++");
+
+    function addopti(lang){
+        const li=document.createElement("li");
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector('.lang').appendChild(li);
+    }
+    addopti("aviral")
+
+    //edit
+
+    const secLang=document.querySelector("li:nth-child(2)");
+    secLang.innerHTML="mojo";
+    // const newLi=document.createElement('li');
+    // newLi.textContent="mojo";
+    // secLang.replaceWith(newLi)
+
+    //remove
+
+    const lastlang=document.querySelector('li:last-child');
+    lastlang.remove();
+</script>
+</html>
