@@ -1,0 +1,73 @@
+// const codeing=["js","java","c","python"];
+
+// codeing.forEach((item)=> {
+//     console.log(item);
+// })
+
+
+// const myNums=[1,2,3,4,5,6,7,8,9,10];
+
+// const newNums=myNums.filter((num)=>{
+//     return num>4
+// })
+
+// console.log(newNums)
+
+
+// myNums.forEach((num)=>{
+//     if(num > 4)
+//     console.log(num)
+// })
+
+
+
+// const myNums=[1,2,3,4,5,6,7,8,9,10];
+
+// const newNums=myNums.map((num) => num+10);
+// console.log(newNums)
+
+
+//chaining
+// const newNums=myNums
+//     .map((num)=>num*10)
+//     .map((num)=>num+1);
+
+//     console.log(newNums)
+
+//reduce
+const myNums=[1,2,3];
+
+// const tot=myNums.reduce(function (acc,curr){
+//     console.log(`acc: ${acc} curr: ${curr}`);
+//     return acc + curr
+// },2)
+// console.log(tot);
+
+const tot=myNums.reduce((acc,curr)=>(acc+curr),0)
+console.log(tot);
+
+const shoppingCart=[
+   {
+    itemname:"js course",
+    price:2999
+   },
+   {
+    itemname:"java course",
+    price:2999
+   },
+   {
+    itemname:"es course",
+    price:2999
+   },
+   {
+    itemname:"mobile course",
+    price:2999
+   },
+   {
+    itemname:"data science course",
+    price:2999
+   },
+]
+
+const total=shoppingCart.reduce((acc,item)=>(acc+item.price),0);
+console.log(total)

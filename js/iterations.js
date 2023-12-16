@@ -71,9 +71,24 @@ for (const key in pro){
 
 
 // for each
+// does'nt return anything
 
-const coding=["js","cpp" , "py", "java"]
+// const coding=["js","cpp" , "py", "java"]
 
-coding.forEach(function (element){
-    console.log(element)
+// coding.forEach(function (element){
+//     console.log(element)
+// })
+
+
+const myNums=[1,2,3,4,5,6,7,8,9,10];
+// const newNums=myNums.filter( (num) => num > 4)
+// console.log(newNums)
+
+const newNums=[]
+myNums.forEach ( ( num) => {
+    if( num >4 ){
+        newNums.push( num);    
+    }
 })
+
+console.log(newNums)
